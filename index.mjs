@@ -1,9 +1,10 @@
 import express from 'express';
-import { welcome, add } from './hello';
+// import { welcome, add } from './hello';
+import welcome from './hello';
 
 const app = express();
 
-app.get('/', (req, res) => res.send(add(5, 5).toString()));
+app.get('/', (req, res) => res.send(welcome));
 
 const port = 5000;
 
